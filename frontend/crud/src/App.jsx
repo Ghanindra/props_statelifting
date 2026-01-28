@@ -71,17 +71,113 @@
 // export default App
 
 
-import React, { useState } from 'react'
-import Inputbox from './components/props_statinglifting/Inputbox'
-import Textpreview from './components/Textpreview'
+// import React from 'react'
+// // import Useeffect from './components/Useeffect'
+// import Clock from './components/Clock'
+// const App = () => {
+//   return (
+//     // <div><Useeffect/></div>
+//     <div><Clock/></div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+import React from 'react'
+import Counter from './memo/Counter'
 const App = () => {
-  const[text,setText]=useState("")
   return (
     <div>
-    <Inputbox changeText={setText}/>
-    <Textpreview text={text}/>
+      <Counter/>
     </div>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+// import Inputbox from './components/props_statinglifting/Inputbox'
+// import Textpreview from './components/Textpreview'
+// const App = () => {
+//   const[text,setText]=useState("")
+//   return (
+//     <div>
+//     <Inputbox changeText={setText}/>
+//     <Textpreview text={text}/>
+//     </div>
+//   )
+// }
+
+// export default App
