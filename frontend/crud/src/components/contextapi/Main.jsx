@@ -6,7 +6,7 @@ const Main = () => {
   const {theme,toogle}=useContext(ThemeContext)
   return (
     <div>
-        <p>This is {theme} mode</p>
+        <p style={{color:theme==='light'?'green':'red'}}>This is {theme} mode</p>
         <button onClick={toogle}>change theme</button>
     </div>
   )

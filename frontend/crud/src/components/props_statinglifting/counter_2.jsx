@@ -3,6 +3,7 @@ import React from 'react'
 const counter_2 = ({counter}) => {
      const incre=(()=>{
         counter(prev=>prev+1)
+        
     })
   return (
 

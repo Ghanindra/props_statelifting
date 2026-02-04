@@ -41,10 +41,8 @@ const [image,setImage]=useState(null)
       console.error("Error submitting user:", error);
       alert("Submission failed!");
     }
-// console.log({ username, email, phone });
-// console.log("image",image?.name);
 
-//     alert(`Submitted: ${username}, ${email}, ${phone}, ${image?.name}`);
+
   }
   return (
     <div className="container">

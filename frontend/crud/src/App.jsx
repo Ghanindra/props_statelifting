@@ -159,33 +159,44 @@
 
 
 
-import React, { useState } from 'react'
-import Header from './components/contextapi/Header'
-import Body from './components/contextapi/Body'
-import Footer from './components/contextapi/Footer'
-import { ThemeContext } from "./context/ThemeContext";
-const App = () => {
-  const[theme,setTheme]=useState("light")
+// import React, { useState } from 'react'
+// import Header from './components/contextapi/Header'
+// import Body from './components/contextapi/Body'
+// import Footer from './components/contextapi/Footer'
+// import { ThemeContext } from "./context/ThemeContext";
+// const App = () => {
+//   const[theme,setTheme]=useState("light")
 
 
- const toogle=(()=>{
-  setTheme(theme==='light'?'dark':'light')
- })
-  return (
-    <div style={{backgroundColor:theme==='light'?"#ffffff":"#121212",color:theme==='light'?'#111111':"#ffffff"}}>
-      <ThemeContext value={{theme,toogle}}>
-      <Header />
-      <Body/>
-      <Footer/>
-      </ThemeContext>
+//  const toogle=(()=>{
+//   setTheme(theme==='light'?'dark':'light')
+//  })
+//   return (
+//     <div style={{backgroundColor:theme==='light'?"#ffffff":"#121212",color:theme==='light'?'#111111':"#ffffff"}}>
+//       <ThemeContext value={{theme,toogle}}>
+//       <Header />
+//       <Body/>
+//       <Footer/>
+//       </ThemeContext>
       
+//     </div>
+//   )
+// }
+
+// export default App
+
+// useForm
+import React from 'react'
+import UseForm from './components/UseForm'
+const App = () => {
+  return (
+    <div>
+      <UseForm/>
     </div>
   )
 }
 
 export default App
-
-
 
 
 
