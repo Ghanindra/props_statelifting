@@ -1,3 +1,9 @@
+
+// FOR USESTATE AND STATELIFTING
+
+// import { useRef } from "react";
+
+
 // import React, { useState } from 'react'
 // // import Form from './components/Form.jsx'
 // // import Data from './components/data.jsx'
@@ -70,6 +76,7 @@
 
 // export default App
 
+//FOR USEEFFECT
 
 // import React from 'react'
 // // import Useeffect from './components/Useeffect'
@@ -88,40 +95,95 @@
 
 
 
+//FOR MEMO CONCEP
+
+
+// import React from 'react'
+// import Counter from './memo/Counter'
+// const App = () => {
+//   return (
+//     <div>
+//       <Counter/>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 
-import React from 'react'
-import Counter from './memo/Counter'
+
+
+// import React from 'react'
+// import LargeNumber from './memo/LargeNumber'
+// const App = () => {
+//   return (
+//     <div>
+//       <LargeNumber/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+// CALLBACK
+
+// import React from 'react'
+// import Callbacks from './memo/Callbacks'
+// const App = () => {
+//   return (
+//     <div>
+//       <Callbacks/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// useRef
+// import React from 'react'
+// import Useref from './components/useRef/Useref'
+// const App = () => {
+//   return (
+//     <div><Useref/></div>
+//   )
+// }
+
+// export default App
+
+
+
+import React, { useState } from 'react'
+import Header from './components/contextapi/Header'
+import Body from './components/contextapi/Body'
+import Footer from './components/contextapi/Footer'
+import { ThemeContext } from "./context/ThemeContext";
 const App = () => {
+  const[theme,setTheme]=useState("light")
+
+
+ const toogle=(()=>{
+  setTheme(theme==='light'?'dark':'light')
+ })
   return (
-    <div>
-      <Counter/>
+    <div style={{backgroundColor:theme==='light'?"#ffffff":"#121212",color:theme==='light'?'#111111':"#ffffff"}}>
+      <ThemeContext value={{theme,toogle}}>
+      <Header />
+      <Body/>
+      <Footer/>
+      </ThemeContext>
+      
     </div>
   )
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
