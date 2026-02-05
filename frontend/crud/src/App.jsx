@@ -1,6 +1,8 @@
 
 // FOR USESTATE AND STATELIFTING
 
+
+
 // import { useRef } from "react";
 
 
@@ -186,25 +188,39 @@
 // export default App
 
 // useForm
+
+// import React from 'react'
+// import UseForm from './components/UseForm'
+// const App = () => {
+//   return (
+//     <div>
+//       <UseForm/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+// useReducer
+
 import React from 'react'
-import UseForm from './components/UseForm'
+import Counter from './usereducer/Counter'
+
 const App = () => {
   return (
     <div>
-      <UseForm/>
+      <Counter/>
     </div>
   )
 }
 
 export default App
-
-
-
-
-
-
-
-
 
 
 
