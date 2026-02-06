@@ -210,12 +210,14 @@
 // useReducer
 
 import React from 'react'
-import Counter from './usereducer/Counter'
+// import Counter from './usereducer/Counter'
+import LoginForm from './usereducer/LoginForm'
 
 const App = () => {
   return (
     <div>
-      <Counter/>
+      {/* <Counter/> */}
+      <LoginForm/>
     </div>
   )
 }

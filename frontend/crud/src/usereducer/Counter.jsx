@@ -23,6 +23,10 @@ const reducer=(state,action)=>{
   return {count:action.payload}
     
    }  
+     case "reset":{
+  return {count:state.count=0}
+    
+   }  
         default:{
   return state
         }
@@ -47,6 +51,7 @@ const reducer=(state,action)=>{
         <h1 style={{alignItems:"center"}}>{state.count}</h1>
         <button onClick={()=>dispatch({type:'increment'}) }>increment</button>
         <button onClick={()=>dispatch({type:'decrement'})} >decrement</button>
+        <button onClick={()=>dispatch({type:'reset'})} >reset</button>
       <br/>
        <input type="number" 
        value={state.count}
